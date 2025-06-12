@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Shop</title>
+    <link rel="icon" type="image/x-icon" href="/img/fav-icon-my-melody.png" />
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Magic Shop
+        </h1>
+        <form class="pesquisar">
+            <input type="text" name="pesquisa" id="" placeholder="Faça sua pesquisa" />
+            <button type="submit">
+                Pesquisar
+            </button>
+        </form>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="/banco de imagens - Magic Shop/icones/icon-carrinho.png" alt="carrinho de compras" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/banco de imagens - Magic Shop/icones/icon-profile.png" alt="icone de perfil" />
+                </a>
+            </li>
+        </ul>
+    </header>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="/HTML/index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/HTML/produtos.html">
+                    Produtos
+                </a>
+            </li>
+            <li>
+                <a href="#more sold">
+                    Mais Vendidos
+                </a>
+            </li>
+            <li>
+                <a href="/HTML/sobre-nos.html">
+                    Sobre Nós
+                </a>
+            </li>
+            <li>
+                <a href="/HTML/contate-nos.html">
+                    Contatos
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="produto-desc">
+
+            <figure class="desc-produto-imagem">
+                <img src="/banco de imagens - Magic Shop/Kuromi/Kuromi - black classic with dress purple.png" alt="">
+            </figure>
+
+            <article class="desc-produto-info">
+
+                <h2 class="desc-produto-title">
+                    Pelucia Kuromi Classic
+                </h2>
+
+                <p class="desc-produtos-descricao"> <!-- CORRIGIDO AQUI -->
+                    Encante-se com a personalidade desta pelúcia Kuromi! Com seu capuz preto e as orelhas pontudas,
+                    essa versão da Kuromi exala um charme único. Seu sorriso travesso e olhar atrevido trazem uma vibe
+                    divertida e ousada a qualquer ambiente. <br><br>
+                    Feita com materiais macios e de alta qualidade, ela é perfeita para abraçar, decorar ou presentear
+                    quem ama os personagens da Sanrio. Os detalhes bordados nos olhos e no sorriso garantem um
+                    acabamento incrível e seguro para os pequenos.
+                </p>
+
+                <p class="desc-produtos-preco">
+                    R$ 39,90
+                </p>
+
+
+                <form class="desc-produto-form" action="#">
+
+                    <label for="quantidade" class="desc-produto-label">
+                        Selecionar quantidade
+                    </label>
+
+                    <div class="desc-produto-quantidade">
+                        <button type="button" aria-label="Diminuir">
+                            −
+                        </button>
+                        <input type="number" id="quantidade" name="quantidade" value="1" min="1">
+                        <button type="button" aria-label="Aumentar">
+                            +
+                        </button>
+                    </div>
+
+                    <button type="submit" class="botao desc-botao-comprar">
+                        Comprar Agora
+                    </button>
+
+                    <button type="button" class="botao desc-botao-carrinho">
+                        Adicionar ao carrinho
+                    </button>
+
+                </form>
+
+            </article>
+        </section>
+
+
+        <hr class="linha-tracejada">
+
+        <section class="produtos-similiares">
+
+            <h3 class="itens-semelhantes-title">
+                Itens Semelhantes:
+            </h3>
+
+            <div class="nossos-produtos">
+                <button class="arrow">
+                    <img src="/banco de imagens - Magic Shop/icones/seta esquerda.png" alt="" />
+                </button>
+
+                <article class="card">
+                    <img src="/banco de imagens - Magic Shop/Hello Kitty/Hello Kitty - Classic.png" alt="Imagem 1" />
+                    <h4>
+                        Pelucia Hello Kitty Classic
+                    </h4>
+                    <p>
+                        R$ 35,90
+                    </p>
+                    <button>
+                        Ver Mais
+                    </button>
+                    <button>
+                        Comprar
+                    </button>
+                </article>
+
+                <article class="card">
+                    <img src="/banco de imagens - Magic Shop/My Melody/My Melody - classic.png" alt="Imagem 1" />
+                    <h4>
+                        Pelucia My Melody Classic
+                    </h4>
+                    <p>
+                        R$ 35,90
+                    </p>
+                    <button>
+                        Ver Mais
+                    </button>
+                    <button>
+                        Comprar
+                    </button>
+                </article>
+
+                <article class="card">
+                    <img src="/banco de imagens - Magic Shop/Kuromi/Kuromi - black classic with dress purple.png"
+                        alt="Imagem 1" />
+                    <h4>
+                        Pelucia Kuromi Classic
+                    </h4>
+                    <p>
+                        R$ 35,90
+                    </p>
+                    <button>
+                        Ver Mais
+                    </button>
+                    <button>
+                        Comprar
+                    </button>
+                </article>
+
+                <article class="card">
+                    <img src="/banco de imagens - Magic Shop/Cinnamoroll/Cinnamoroll - Classic.png"
+                        alt="Cinnamoroll sentado" />
+                    <h4>
+                        Pelucia Cinnamoroll Classic
+                    </h4>
+                    <p>
+                        R$ 35,90
+                    </p>
+                    <button>
+                        Ver Mais
+                    </button>
+                    <button>
+                        Comprar
+                    </button>
+                </article>
+
+                <article class="card">
+                    <img src="/banco de imagens - Magic Shop/Pompompurin/Pompompurin - classic.png"
+                        alt="Pompompurin sentado" />
+                    <h4>
+                        Pelucia Pompompurin Classic
+                    </h4>
+                    <p>
+                        R$ 35,90
+                    </p>
+                    <button>
+                        Ver Mais
+                    </button>
+                    <button>
+                        Comprar
+                    </button>
+                </article>
+
+                <button class="arrow">
+                    <img src="/banco de imagens - Magic Shop/icones/seta direita.png" alt="" />
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="all-pages-footer">
+        <p>
+            Magic Shop © 2025. Todos os direitos são reservados.
+        </p>
+    </footer>
+</body>
+
+</html>

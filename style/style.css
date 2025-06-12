@@ -1,0 +1,1605 @@
+/*==========Geral==============*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*==== Body ====*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+/*=====Header=====*/
+header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+    padding: 15px 20px;
+    position: relative;
+    height: 100px;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    margin: 0 10px;
+}
+
+header form.pesquisar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 2px 8px #c05075;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pesquisar label {
+    margin-right: 10px;
+    color: black;
+}
+
+.pesquisar input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3 ease;
+}
+
+.pesquisar input[type="text"]:focus {
+    border-color: palevioletred;
+}
+
+.pesquisar button {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 2px;
+    border-radius: 20px;
+    background-color: #ea4b8a;
+    border: #ea4b8a;
+}
+
+.pesquisar button:hover {
+    background-color: #bc255c;
+}
+
+/*=====Nav-bar=============*/
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+    padding: 15px 20px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-bar li {
+    list-style-type: none;
+}
+
+.nav-bar a {
+    display: inline-block;
+    padding: 15px 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    margin: 0 10px;
+}
+
+.nav-bar a:hover {
+    background-color: #bc255c;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Article geral*/
+article {
+    flex: 3;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+/*=============Homepage=============================*/
+.homepage-title {
+    flex: 3;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+.homepage-title h2 {
+    text-align: center;
+    color: #c05075;
+    font-size: 45px;
+    font-family: Snell Roundhand, cursive;
+}
+
+/*====================banner======================*/
+.banner {
+    background-color: #C05075;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    display: flex;
+    width: 1200px;
+    height: 300px;
+    margin: 30px auto;
+}
+
+.banner-content {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.titulo {
+    font-family: "Alex Brush", cursive;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.subtitulo {
+    font-family: 'Alata', sans-serif;
+    font-size: 32px;
+    margin: 10px 0 30px 0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 18px 36px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Alata', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/*===============Produtos - Home ===========*/
+
+.nossos-produtos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: 20px auto;
+}
+
+.titulo-produtos {
+    color: white;
+    background-color: #ea4b8a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    padding: 5px 40px;
+    border: #ea4b8a 3px dashed;
+    border-radius: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    width: fit-content;
+    margin: 2px auto;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: 3px solid #FFC0CB;
+    border-radius: 30px;
+    width: 400px;
+    height: 550px;
+    padding: 15px;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #FFC0CB;
+    margin-bottom: 15px;
+}
+
+
+.card img {
+    width: auto;
+    height: 280px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 24px;
+    margin: 10px 0 5px;
+    color: black;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    padding: 2px;
+}
+
+
+.card p {
+    color: #ea4b8a;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.card button {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 80%;
+    height: 47px;
+    justify-content: center;
+    margin: 5px 0;
+    background-color: #BC255C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.card button:hover {
+    background-color: #ea4b8a;
+}
+
+.arrow {
+    border: none;
+    background-color: #fff;
+}
+
+.arrow img {
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+}
+
+.sessao-produtos {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/*----------------------------Personagenss - homepage -------------------------*/
+.personagens {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.titulo-personagens {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-family: "Montserrat" sans-serif;
+    color: #C05075;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.nome-personagens {
+    margin-top: 16px;
+    font-size: 26px;
+    color: #EA4B8A;
+    transform: rotate(-1.15deg);
+}
+
+.nome-personagens a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.nome-personagens a:hover {
+    transform: translateY(-6px);
+}
+
+/*----------------------Linhaaa-------------------------------*/
+.linha-tracejada {
+    border: none;
+    border-top: 3px dashed #db7093;
+    margin: 20px 0;
+}
+
+/*-------------------------About-us---------------------------------*/
+
+.sobre-nos {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.sobre-nos-text {
+    flex: 0 0 50%;
+    background-color: #C05075;
+    color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-nos-text h2 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.sobre-nos-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.sobre-nos-imagem {
+    flex: 0 0 50%;
+}
+
+.sobre-nos-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sobre-nos-text button {
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #bc255c;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "montserrat";
+    border: none;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.sobre-nos-text button:hover {
+    background-color: #db7093;
+}
+
+
+/*--------------------------Responsividade--------------------------*/
+
+/* Responsividade - Quando a tela for pequena, os elementos vão empilhar */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    article,
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* 
+
+
+
+/*==================================================================*/
+.botoes-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+
+/*==============================Tela produtos========================*/
+.botoes-coloridos-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.botoes-coloridos-categorias button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-family: "Montserrat" sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.hello-kitty-button {
+    background-color: #D6213B;
+}
+
+.my-melody-button {
+    background-color: #EA4B8A;
+}
+
+.kuromi-button {
+    background-color: #8260A2;
+}
+
+.cinnamoroll-button {
+    background-color: #4CB5E8;
+}
+
+.pompompurin-button {
+    background-color: #EEA33F;
+}
+
+
+.botoes-coloridos-categorias button:hover,
+.botoes-coloridos-categorias button:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+/*------------------------------------------------------*/
+
+.our-products {
+    color: #C05075;
+    font-family: "Montserrat" sans-serif;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /*distancia linha de baixo*/
+    margin-top: 20px;
+    /*distancia linha de cima */
+    text-shadow: 1px 1px 2px #ffd1dc;
+}
+
+.categorias h3 {
+    font-family: "Montserrat" sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #EA4B8A;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+
+/*--------------------Hello Kitty-----------------------*/
+.hello-kitty-title {
+    color: white;
+    background-color: #D6213B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 6px 40px;
+    border-radius: 50px;
+    text-align: center;
+    border: 3px dashed #D6213B;
+    width: 357px;
+    justify-content: center;
+    height: 52px;
+    margin: 2px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.produtos-kitty {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 40px 70px;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 1px;
+    scroll-behavior: smooth;
+}
+
+.card-hello-kitty {
+    border: 3px solid #FFB2C9;
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+    padding: 15px;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #FFB2C9;
+    position: relative;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-hello-kitty img {
+    width: 320px;
+    height: 320px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+
+.card-hello-kitty h3 {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+    text-align: center;
+    margin: 10px 0;
+}
+
+.card-hello-kitty p {
+    color: #D6213B;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+}
+
+.card-hello-kitty button {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 80%;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 7px 0;
+    background-color: #D6213B;
+    color: white;
+    border: #D6213B;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+}
+
+.card-hello-kitty button:hover {
+    background-color: brown;
+}
+
+/*--------------My Melody------------------------*/
+.my-melody-title {
+    color: white;
+    background-color: #EA4B8A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 6px 40px;
+    border-radius: 50px;
+    text-align: center;
+    border: 3px dashed #EA4B8A;
+    width: 357px;
+    justify-content: center;
+    height: 52px;
+    margin: 2px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.produtos-my-melody {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 40px 70px;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 1px;
+    scroll-behavior: smooth;
+}
+
+.card-my-melody {
+    border: 3px solid #FFC0CB;
+    border-radius: 30px;
+    width: 400px;
+    padding: 15px;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #FFC0CB;
+    justify-content: center;
+}
+
+.card-my-melody img {
+    width: auto;
+    height: 320px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+.card-my-melody h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.card-my-melody p {
+    color: #BC255C;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+}
+
+.card-my-melody button {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 80%;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 7px 0;
+    background-color: #BC255C;
+    color: white;
+    border: #BC255C;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+}
+
+.card-my-melody button:hover {
+    background-color: #5e2129;
+}
+
+/*-------------Kuromi-------------------------*/
+
+.kuromi-title {
+    color: white;
+    background-color: #8260A2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 6px 40px;
+    border-radius: 50px;
+    text-align: center;
+    border: 3px dashed #8260A2;
+    width: 357px;
+    justify-content: center;
+    height: 52px;
+    margin: 2px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.produtos-kuromi {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 40px 70px;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 1px;
+    scroll-behavior: smooth;
+}
+
+.card-kuromi {
+    border: 3px solid #CAC5ED;
+    border-radius: 30px;
+    width: 400px;
+    padding: 15px;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #CAC5ED;
+    justify-content: center;
+}
+
+.card-kuromi img {
+    width: auto;
+    height: 320px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+.card-kuromi h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.card-kuromi p {
+    color: #8260A2;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+}
+
+.card-kuromi button {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 80%;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 7px 0;
+    background-color: #8260A2;
+    color: white;
+    border: #8260A2;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+}
+
+.card-kuromi button:hover {
+    background-color: #46295a;
+}
+
+/*-------------Cinnamoroll-------------------------*/
+
+.cinnamoroll-title {
+    color: white;
+    background-color: #4CB5E8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 6px 40px;
+    border-radius: 50px;
+    text-align: center;
+    border: 3px dashed #4CB5E8;
+    width: 357px;
+    justify-content: center;
+    height: 52px;
+    margin: 2px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.produtos-cinnamoroll {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 40px 70px;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 1px;
+    scroll-behavior: smooth;
+}
+
+.card-cinnamoroll {
+    border: 3px solid #C1E7F5;
+    border-radius: 30px;
+    width: 400px;
+    padding: 15px;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #C1E7F5;
+    justify-content: center;
+}
+
+.card-cinnamoroll img {
+    width: auto;
+    height: 320px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+.card-cinnamoroll h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.card-cinnamoroll p {
+    color: #4CB5E8;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+}
+
+.card-cinnamoroll button {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 80%;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 7px 0;
+    background-color: #4CB5E8;
+    color: white;
+    border: #4CB5E8;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+}
+
+.card-cinnamoroll button:hover {
+    background-color: #00008B;
+}
+
+.sobre-nos a {
+    text-decoration: none;
+    color: white;
+}
+
+/*-------------Pompompurin-------------------------*/
+
+.pompompurin-title {
+    color: white;
+    background-color: #EEA33F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 6px 40px;
+    border-radius: 50px;
+    text-align: center;
+    border: 3px dashed #EEA33F;
+    width: 357px;
+    justify-content: center;
+    height: 52px;
+    margin: 2px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.produtos-pompompurin {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 40px 70px;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 1px;
+    scroll-behavior: smooth;
+}
+
+.card-pompompurin {
+    border: 3px solid #F6F2AF;
+    border-radius: 30px;
+    width: 400px;
+    padding: 15px;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #F6F2AF;
+    justify-content: center;
+}
+
+.card-pompompurin img {
+    width: auto;
+    height: 320px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+.card-pompompurin h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.card-pompompurin p {
+    color: #965F37;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+}
+
+.card-pompompurin button {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 80%;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 7px 0;
+    background-color: #965F37;
+    color: white;
+    border: #965F37;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+}
+
+.card-pompompurin button:hover {
+    background-color: #422600;
+}
+
+/*--------------Heart Icon----------------------*/
+.heart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #D6213B99;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 5;
+}
+
+.card-hello-kitty:hover .heart-icon {
+    background-color: white;
+    color: #D6213B;
+}
+
+.card-kuromi:hover .heart-icon {
+    background-color: white;
+    color: #D6213B;
+}
+
+.card-my-melody:hover .heart-icon {
+    background-color: white;
+    color: #D6213B;
+}
+
+.card-cinnamoroll:hover .heart-icon {
+    background-color: white;
+    color: #D6213B;
+}
+
+.card-pompompurin:hover .heart-icon {
+    background-color: white;
+    color: #D6213B;
+}
+
+.heart-icon.active {
+    background-color: white;
+    color: #D6213B;
+}
+
+
+/*=================================================================*/
+.all-pages-footer {
+    display: flex;
+    background-color: #DB7093;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-pages-footer p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    margin: 0;
+
+}
+
+/*---------------------Sobre nós--------------------------*/
+.sobre-nos-page-about {
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nos-page-about h2 {
+    text-align: center;
+    font-size: 50px;
+    justify-content: center;
+    color: #BC255C;
+    margin-top: 60px;
+
+
+}
+
+.sobre-nos-page-about p {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 22px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.social-media-icons h3 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "montserrat";
+    color: #bc255c;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.social-media-icons {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.socials-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 26px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon-text i {
+    font-size: 50px;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.icon-text:nth-child(1) i {
+    color: #E1306C;
+}
+
+/* Instagram */
+.icon-text:nth-child(2) i {
+    color: #1877F2;
+}
+
+/* Facebook */
+.icon-text:nth-child(3) i {
+    color: #1DA1F2;
+}
+
+/* Twitter */
+
+.icon-text:hover {
+    color: inherit;
+}
+
+.icon-text:hover i {
+    color: inherit;
+}
+
+.social-media-icons img {
+    margin-top: 20px;
+}
+
+/*---------------------------Contate-nos----------------------------------------*/
+.contato {
+    height: 63vh;
+    width: 100%;
+}
+
+
+.contate-nos {
+    display: block;
+    flex-direction: column;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: #FFC0CB;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(188, 37, 92, 0.15);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    margin: 120px auto;
+
+    h3 {
+        margin: 10px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        color: #C05075;
+    }
+
+    .alinhamento {
+        margin-left: 110px;
+        margin-right: 100px;
+
+
+    }
+}
+
+.contate-nos label {
+    display: block;
+    font-weight: 600;
+    color: #C05075;
+    margin-top: 14px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+
+.contate-nos input[type="text"],
+.contate-nos input[type="email"],
+.contate-nos input[type="tel"],
+.contate-nos textarea {
+    width: 900px;
+    padding: 12px 15px;
+    border: 2px solid #bc255c;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #4b1d35;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+}
+
+.contate-nos button[type="submit"] {
+    margin-top: 25px;
+    width: 70%;
+    height: 70px;
+    padding: 15px 0;
+    background-color: #bc255c;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 140px;
+    margin-right: 30px;
+}
+
+.contate-nos button[type="submit"]:hover {
+    background-color: #a81f4a;
+}
+
+.small-page-footer {
+    display: flex;
+    background-color: #DB7093;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.small-page-footer p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    margin: 0;
+
+}
+
+/*---------------------------------------------------------------*/
+.produto-desc {
+    display: flex;
+    align-items: flex-start;
+    /* alinha tudo pelo topo */
+    max-width: 70%;
+    margin: 40px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(188, 37, 92, 0.15);
+    padding: 20px;
+    gap: 20px;
+    text-align: left;
+}
+
+.desc-produto-imagem {
+    width: 550px;
+    flex-shrink: 0;
+    border: 1px solid #EA4B8A;
+}
+
+.desc-produto-imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.desc-produto-info {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.desc-produto-title {
+    color: #EA4B8A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #EA4B8A;
+    padding-bottom: 4px;
+
+}
+
+.desc-produtos-descricao {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.desc-produtos-preco {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #d62872;
+    margin-bottom: 20px;
+    text-align: left;
+
+}
+
+.desc-produto-form {
+    margin-top: auto;
+}
+
+.desc-produto-label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin: 16px 0 8px 0;
+    display: block;
+}
+
+.desc-produto-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.desc-produto-quantidade button {
+    font-family: "Montserrat";
+    background-color: #BC255C;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.desc-produto-quantidade button:hover {
+    background-color: #9e1f4e;
+}
+
+.desc-produto-quantidade input {
+    width: 60px;
+    padding: 6px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #BC255C;
+    border-radius: 4px;
+}
+
+.botao {
+    width: 100%;
+    padding: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.desc-botao-comprar {
+    background-color: #BC255C;
+    color: white;
+}
+
+.desc-botao-comprar:hover {
+    background-color: #a91e4f;
+}
+
+.desc-botao-carrinho {
+    background-color: transparent;
+    border: 1px solid #BC255C;
+    color: #BC255C;
+}
+
+.desc-botao-carrinho:hover {
+    background-color: white;
+}
+
+.itens-semelhantes-title {
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 40px;
+    color: #EA4B8A;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    margin-bottom: 40px;
+}
+
+
+
+/*==================================================*/
+.carrinho-container {
+    width: 80%;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #FFC0CB;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.carrinho-container h2 {
+    font-family: "Montserrat";
+    width: 100%;
+    text-align: center;
+    color: #C05075;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lista-itens {
+    list-style: none;
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.item .info {
+    flex-grow: 1;
+}
+
+.item h3 {
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.item strong {
+    font-family: "Montserrat";
+    font-size: 28px;
+    color: #8a1c4a;
+}
+
+.item label {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: black;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.quantidade button {
+    background-color: #d62872;
+    color: white;
+    border: none;
+    padding: 6px;
+    border: 5px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    font-size: 16px ;
+}
+
+.quantidade input {
+    width: 45px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 2px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.resumo {
+    flex: 1 1 1 280px;
+    background-color: #ffe9f0;
+    border: 2px solid #ffb6c1;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 650px;
+}
+
+.resumo p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: black;
+}
+
+.resumo .desconto {
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.resumo .total {
+    font-weight: bold;
+    font-size: 20px;
+    color: #8a1c4a;
+    margin-top: 10px;
+}
+
+.finalizar {
+    margin-top: 15px;
+    padding: 14px;
+    background-color: #8a1c4a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    height: 80px;
+}
+
+.finalizar:hover {
+  background-color: #6b1538;
+}

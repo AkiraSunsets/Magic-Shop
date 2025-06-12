@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Magic Shop
+    </title>
+    <link rel="icon" type="image/x-icon" href="/img/fav-icon-my-melody.png" />
+
+    <link rel="stylesheet" href="/style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!------------Header----------------->
+    <header>
+        <h1>
+            Magic Shop
+        </h1>
+        <form class="pesquisar">
+            <input type="text" name="pesquisa" id="" placeholder="Faça sua pesquisa" />
+            <button type="submit">
+                Pesquisar
+            </button>
+        </form>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="/banco de imagens - Magic Shop/icones/icon-carrinho.png" alt="carrinho de compras" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/banco de imagens - Magic Shop/icones/icon-profile.png" alt="icone de perfil" />
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!------------------Nav-bar---------->
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="/HTML/index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/HTML/produtos.html">
+                    Produtos
+                </a>
+            </li>
+            <li>
+                <a href="#mais-vendidos">
+                    Mais Vendidos
+                </a>
+            </li>
+            <li>
+                <a href="/HTML/sobre-nos.html">
+                    Sobre Nós
+                </a>
+            </li>
+            <li>
+                <a href="/HTML/contate-nos.html">
+                    Contatos
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="contato">
+        <section class="contate-nos">
+            <h3>
+                Contate-nos!
+            </h3>
+            <form action="" class="alinhamento">
+
+                <label for="nome">
+                    Nome:
+                </label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+                <label for="email">
+                    E-mail:
+                </label>
+
+                <input type="email" name="email" id="email" placeholder="Digite seu email ex: exemplo@magicshop.com"
+                    required>
+                <label for="telefone">
+                    Telefone:
+                </label>
+
+                <input type="tel" placeholder="Ex: (19) 91234-5678" required>
+                <label for="mensagem">
+                    Mensagem:
+                </label>
+
+                <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem!" required>
+            </textarea>
+
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="small-page-footer">
+        <p>
+            Magic Shop © 2025. Todos os direitos são reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>
